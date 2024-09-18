@@ -1,0 +1,91 @@
+/*
+Template Name: Tailwick - Admin & Dashboard Template
+Author: Themesdesign
+Version: 1.1.0
+Website: https://themesdesign.in/
+Contact: Themesdesign@gmail.com
+File: tailwind scss File
+*/
+@import "../../node_modules/choices.js/public/assets/styles/choices.min.css";
+@import "../../node_modules/flatpickr/dist/flatpickr.min.css";
+@import "../../node_modules/leaflet/dist/leaflet.css";
+@import "../../node_modules/swiper/swiper-bundle.css";
+@import "../../node_modules/vanilla-calendar-pro/build/vanilla-calendar.min.css";
+@import "../../node_modules/gridjs/dist/theme/mermaid.min.css";
+@import "../../node_modules/sweetalert2/dist/sweetalert2.css";
+@import "../../node_modules/glightbox/dist/css/glightbox.css";
+@import "../../node_modules/@dasundev/livewire-dropzone-styles/dist/styles.css";
+
+@import "fonts/fonts";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "plugins/gridjs";
+
+.group\/menu-link:hover,
+.animate {
+    animation-iteration-count: 2;
+    stroke-dasharray: 10;
+}
+
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar,
+.ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
+    @apply dark:bg-zink-700 dark:border-zink-500;
+}
+
+.ck-rounded-corners .ck.ck-editor__editable:not(.ck-editor__nested-editable),
+.ck.ck-editor__editable.ck-rounded-corners:not(.ck-editor__nested-editable) {
+    @apply dark:bg-zink-700 dark:border-zink-500;
+}
+
+// separator
+.ck.ck-toolbar .ck.ck-toolbar__separator {
+    @apply dark:border-zink-500;
+}
+
+// button
+.ck-rounded-corners .ck.ck-button,
+.ck-rounded-corners a.ck.ck-button,
+.ck.ck-button.ck-rounded-corners,
+a.ck.ck-button.ck-rounded-corners {
+    @apply dark:border-zink-700 dark:text-white;
+}
+
+// button hover
+.ck.ck-button:not(.ck-disabled):hover,
+a.ck.ck-button:not(.ck-disabled):hover {
+    @apply dark:border-zink-500 dark:text-white dark:bg-blue-500;
+}
+
+// button check on
+.ck.ck-button.ck-on,
+a.ck.ck-button.ck-on,
+.ck.ck-button.ck-on:not(.ck-disabled):hover,
+a.ck.ck-button.ck-on:not(.ck-disabled):hover {
+    @apply dark:border-zink-500 dark:text-white dark:bg-blue-500;
+}
+
+// List and Form
+.ck.ck-list,
+.ck.ck-link-form,
+.ck.ck-media-form {
+    @apply dark:bg-zink-700 dark:text-white;
+}
+
+.ck.ck-list__item .ck-button:hover:not(.ck-disabled) {
+    @apply dark:bg-zink-700 dark:text-white;
+}
+
+.ck.ck-labeled-field-view .ck-labeled-field-view__status {
+    @apply dark:text-white;
+}
+
+.ck.ck-input {
+    @apply dark:bg-zink-500 dark:text-white;
+}
+
+.ck.ck-editor__main>.ck-editor__editable {
+    @apply px-6;
+}
